@@ -42,7 +42,7 @@
 </beans:bean>
 -->
 <beans:bean class="java.net.URI" id="dbUrl">
-    <beans:constructor-arg value="#{systemEnvironment['CLEARDB_DATABASE_URL']}"/>
+    <beans:constructor-arg value="mysql://b0870bf39aa3da:a66628e3@us-cdbr-iron-east-05.cleardb.net/heroku_f63bfbf71567fbb?reconnect=true"/>
 </beans:bean>
 
 <beans:bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
