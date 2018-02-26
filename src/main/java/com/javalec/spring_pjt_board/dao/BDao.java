@@ -42,7 +42,7 @@ public class BDao {
 			@Override
 			public PreparedStatement createPreparedStatement(Connection con)
 					throws SQLException {
-				String query = "insert into mvc_board (bId, bName, bTitle, bContent, bHit, bGroup, bStep, bIndent) values (mvc_board_seq.nextval, ?, ?, ?, 0, mvc_board_seq.currval, 0, 0)";
+				String query = "insert into mvc_board (bId, bName, bTitle, bContent, bHit, bGroup, bStep, bIndent) values (null, ?, ?, ?, 0, bId, 0, 0)";
 				PreparedStatement pstmt = con.prepareStatement(query);
 				pstmt.setString(1, bName);
 				pstmt.setString(2, bTitle);
@@ -98,7 +98,7 @@ public class BDao {
 	public void reply(final String bId, final String bName, final String bTitle, final String bContent, final String bGroup, final String bStep, final String bIndent) {
 		// TODO Auto-generated method stub
 		
-		String query = "insert into mvc_board (bId, bName, bTitle, bContent, bGroup, bStep, bIndent) values (mvc_board_seq.nextval, ?, ?, ?, ? ,? ,?)";
+		String query = "insert into mvc_board (bId, bName, bTitle, bContent, bGroup, bStep, bIndent) values (null, ?, ?, ?, ? ,? ,?)";
 		
 		template.update(query, new PreparedStatementSetter() {
 			

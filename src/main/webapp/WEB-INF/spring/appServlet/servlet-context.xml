@@ -22,12 +22,11 @@
 	</beans:bean>
 	
 	<context:component-scan base-package="com.javalec.spring_pjt_board" />
-	
 	<beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-   	 <beans:property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
-   	 <beans:property name="url" value="jdbc:oracle:thin:@myoracle12c.senecacollege.ca:1521:oracle12c" />
-   	 <beans:property name="username" value="dbs301_172c09" />
-   	 <beans:property name="password" value="17571118" />
+   	 <beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
+   	 <beans:property name="url" value="jdbc:mysql://us-cdbr-iron-east-05.cleardb.net:3306/heroku_f63bfbf71567fbb" />
+   	 <beans:property name="username" value="b0870bf39aa3da" />
+   	 <beans:property name="password" value="a66628e3" />
     </beans:bean>
 	
 	<beans:bean name="template" class="org.springframework.jdbc.core.JdbcTemplate">
