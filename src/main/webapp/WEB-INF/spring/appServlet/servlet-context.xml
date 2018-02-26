@@ -40,7 +40,7 @@
     <beans:property name="username" value="b0870bf39aa3da"/>
     <beans:property name="password" value="a66628e3"/>
 </beans:bean>
--->
+
 <beans:bean class="java.net.URI" id="dbUrl">
     <beans:constructor-arg value="mysql://b0870bf39aa3da:a66628e3@us-cdbr-iron-east-05.cleardb.net/heroku_f63bfbf71567fbb?reconnect=true"/>
 </beans:bean>
@@ -50,7 +50,13 @@
     <beans:property name="username" value="#{ @dbUrl.getUserInfo().split(':')[0] }"/>
     <beans:property name="password" value="#{ @dbUrl.getUserInfo().split(':')[1] }"/>
 </beans:bean>	
-	
+-->
+	<beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+   	 <beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
+   	 <beans:property name="url" value="jdbc:mysql://us-cdbr-iron-east-05.cleardb.net:3306/heroku_f63bfbf71567fbb" />
+   	 <beans:property name="username" value="b0870bf39aa3da" />
+   	 <beans:property name="password" value="a66628e3" />
+    </beans:bean>
 	
 	<beans:bean name="template" class="org.springframework.jdbc.core.JdbcTemplate">
 		<beans:property name="dataSource" ref="dataSource" />
