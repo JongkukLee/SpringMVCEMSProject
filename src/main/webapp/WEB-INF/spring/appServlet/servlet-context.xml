@@ -23,7 +23,7 @@
 	
 	<context:component-scan base-package="com.javalec.spring_pjt_board" />
 	<beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-   	 <beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
+   	 <beans:property name="driverClassName" value="org.apache.commons.dbcp.BasicDataSource" />
    	 <beans:property name="url" value="jdbc:mysql://us-cdbr-iron-east-05.cleardb.net:3306/heroku_f63bfbf71567fbb" />
    	 <beans:property name="username" value="b0870bf39aa3da" />
    	 <beans:property name="password" value="a66628e3" />
