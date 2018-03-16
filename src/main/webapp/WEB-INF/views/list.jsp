@@ -11,11 +11,11 @@
 	
 	<table width="500" cellpadding="0" cellspacing="0" border="1">
 		<tr>
-			<td>번호</td>
-			<td>이름</td>
-			<td>제목</td>
-			<td>날짜</td>
-			<td>히트</td>
+			<td>Seq</td>
+			<td>Name</td>
+			<td>Title</td>
+			<td>Date</td>
+			<td>Hit</td>
 		</tr>
 		<c:forEach items="${list}" var="dto">
 		<tr>
@@ -29,7 +29,7 @@
 		</tr>
 		</c:forEach>
 		<tr>
-			<td colspan="5"> <a href="write_view">글작성</a> </td>
+			<td colspan="5"> <a href="write_view">Write</a> </td>
 		</tr>
 	</table>
 	
