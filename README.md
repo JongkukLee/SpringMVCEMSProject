@@ -1,4 +1,4 @@
-# SpringMVCEMSProject
+# SpringMVCEMSProject (Writed by Jongkuk Lee)
 
 DEMO Url: https://spring-mvc-emsproject.herokuapp.com/list
 
