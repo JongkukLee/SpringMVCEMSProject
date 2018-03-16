@@ -1,4 +1,4 @@
-# How to Deplply SpringMVC Application on Cloud Platform (Heroku)
+# How to Deploy SpringMVC App on Cloud Platform (Heroku)
 
 Writed by Jongkuk Lee ( DEMO Url: https://spring-mvc-emsproject.herokuapp.com/list )
 
