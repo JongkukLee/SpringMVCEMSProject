@@ -1,8 +1,6 @@
-# SpringMVCEMSProject
+# How to Deplply SpringMVC Application on Cloud Platform (Heroku)
 
-Writed by Jongkuk Lee
-
-DEMO Url: https://spring-mvc-emsproject.herokuapp.com/list
+Writed by Jongkuk Lee ( DEMO Url: https://spring-mvc-emsproject.herokuapp.com/list )
 
 1. install tomcate
 2. install mysql server on heroku
